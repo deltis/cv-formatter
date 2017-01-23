@@ -1,0 +1,61 @@
+<cv last_update="16/01/2017">
+    <headlines>
+        <headline>Senior CV Formatter</headline>
+        <headline>Fake Profile</headline>
+    </headlines>
+    <availability>from 1st of March 2017</availability>
+    <personal_details>
+        <name>Gary T. Clark</name>
+        <email>john.doe@qwertycorp.com</email>
+        <address>
+            <address_line>1926 Martha Street</address_line>
+            <address_line>Prescott, AZ 86314</address_line>
+        </address>
+        <date_of_birth>August 16, 1962</date_of_birth>
+        <phone>928-759-6385</phone>
+    </personal_details>
+    <projects>
+        <project id="1" name="cv-formatter">
+            <customer>CV Corp Inc.</customer>
+            <project_description>A fake CV factory</project_description>
+            <function>Paper jam specialist</function>
+            <datefrom>09/2016</datefrom>
+            <dateto>11/2016</dateto>
+            <technology>Github</technology>
+            <technology>Ant</technology>
+            <technology>XML</technology>
+            <technology>DTD</technology>
+            <technology>XSLT</technology>
+            <technology>GIT</technology>
+        </project>
+    </projects>
+    <education_and_training>
+        <training date="01/2003" place="CV Corp Inc., Paris" duration="5 days">How to become a paper jam fixer ?</training>
+        <training date="1984-1990" place="My College" duration="">Humanités latin-math</training>
+    </education_and_training>
+    <skills>
+        <skill name="Paper jam">
+            <subskill>Fixing</subskill>
+            <subskill>Triggering</subskill>
+        </skill>
+        <skill name="XML">
+            <subskill>DTD</subskill>
+            <subskill>XSLT</subskill>
+        </skill>
+        <skill name="Systems">
+            <subskill>UNIX</subskill>
+            <subskill>Linux</subskill>
+        </skill>
+        <skill name="Programming Languages">
+            <subskill>Java</subskill>
+            <subskill>C</subskill>
+            <subskill>C++</subskill>
+            <subskill>JavaScript</subskill>
+        </skill>
+    </skills>
+    <languages>
+        <language level="mother tongue">French</language>
+        <language level="daily spoken and written">English</language>
+        <language level="read">Chinese</language>
+    </languages>
+</cv>
