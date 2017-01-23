@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<project default="main" basedir=".">
+	<property name="style" value="simple"/>
+    <property name="in.dir" value="in/"/>
+    <property name="out.dir" value="${user.home}/cv_out"/>
+	<target name="main">
+		<xslt basedir="${in.dir}" destdir="${out.dir}" style="style/${style}.xsl"/>
+	</target>
+</project>

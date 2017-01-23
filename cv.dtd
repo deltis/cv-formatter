@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT cv (headlines?, availability, personal_details, projects, education_and_training, skills, languages)>
+<!ATTLIST cv
+	last_update CDATA #IMPLIED
+>
+<!ELEMENT headlines (headline+)>
+<!ELEMENT personal_details (name, email, address?, date_of_birth?, phone?, fax?)>
+<!ELEMENT projects (project+)>
+<!ELEMENT education_and_training (training+)>
+<!ELEMENT skills (skill+)>
+<!ELEMENT project (customer, project_description?, intermediary?, function, datefrom, dateto, activity*, technology*)>
+<!ATTLIST project
+	id CDATA #REQUIRED
+	name CDATA #REQUIRED
+>
+<!ELEMENT skill (subskill+)>
+<!ATTLIST skill
+	name CDATA #REQUIRED
+>
+<!ELEMENT languages (language+)>
+<!ELEMENT headline (#PCDATA)>
+<!ELEMENT availability (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT address (address_line, address_line?, address_line?)>
+<!ELEMENT address_line (#PCDATA)>
+<!ELEMENT date_of_birth (#PCDATA)>
+<!ELEMENT intermediary (#PCDATA)>
+<!ELEMENT customer (#PCDATA)>
+<!ELEMENT project_description (#PCDATA)>
+<!ELEMENT function (#PCDATA)>
+<!ELEMENT technology (#PCDATA)>
+<!ELEMENT activity (#PCDATA)>
+<!ELEMENT datefrom (#PCDATA)>
+<!ELEMENT dateto (#PCDATA)>
+<!ELEMENT training (#PCDATA)>
+<!ATTLIST training
+	date CDATA #REQUIRED
+	place CDATA #REQUIRED
+	duration CDATA #IMPLIED
+>
+<!ELEMENT subskill (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+<!ATTLIST language
+	level CDATA #REQUIRED
+>
+<!ELEMENT fax (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
