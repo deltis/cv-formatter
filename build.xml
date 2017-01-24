@@ -1,14 +1,17 @@
 <?xml version="1.0"?>
 <project default="main" basedir=".">
-    <property name="root" value="${basedir}"/>
 	<property name="style" value="simple"/>
     <property name="in.dir" value="in"/>
     <property name="out.dir" value="${user.home}/cv_out"/>
-	<property name="style.dir" value="${root}/style"/>
+	<property name="style.url" value="file://${basedir}/style"/>
     <target name="main" depends="clean,format-cv"/>
 	<target name="format-cv">
         <echoproperties/>
-		<xslt basedir="${in.dir}" destdir="${out.dir}" style="${style.dir}/${style}.xsl"/>
+		<xslt basedir="${in.dir}" destdir="${out.dir}">
+            <style>
+                <url url="${style.url}/${style}.xsl"/>
+            </style>
+        </xslt>
 	</target>
     <target name="clean" description="Remove the content of out dir">
         <delete includeemptydirs="true">
