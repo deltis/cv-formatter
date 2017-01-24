@@ -3,8 +3,14 @@
 	<property name="style" value="simple"/>
     <property name="in.dir" value="in"/>
     <property name="out.dir" value="${user.home}/cv_out"/>
-	<property name="style.dir" value="style"/>
-	<target name="main">
+	<property name="style.dir" value="${basedir}/style"/>
+    <target name="main" depends="clean,format-cv"/>
+	<target name="format-cv">
 		<xslt basedir="${in.dir}" destdir="${out.dir}" style="${style.dir}/${style}.xsl"/>
 	</target>
+    <target name="clean" description="Remove the content of out dir">
+        <delete includeemptydirs="true">
+            <fileset dir="${out.dir}" includes="**/*"/>
+        </delete>
+    </target>
 </project>
