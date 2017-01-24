@@ -7,6 +7,7 @@
 	<property name="style.dir" value="${root}/style"/>
     <target name="main" depends="clean,format-cv"/>
 	<target name="format-cv">
+        <echoproperties/>
 		<xslt basedir="${in.dir}" destdir="${out.dir}" style="${style.dir}/${style}.xsl"/>
 	</target>
     <target name="clean" description="Remove the content of out dir">
