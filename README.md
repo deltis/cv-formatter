@@ -2,12 +2,12 @@
 Converts one or more CV formatted in XML to HTML.
 
 ### Prerequisite
-You need ant and java installed and configured.
+You need *ant* and *java* installed and configured.
 
 ### Quick start
 
-* Clone the project
-* Issue the command `ant` 
+* Clone the project.
+* Issue the command `ant`
 
 This will generate cv_sample.html into `$HOME/cv_out`
 
@@ -19,3 +19,4 @@ Additional styles can be added to `style` dir. Default style is `simple`. To use
 ### Other parameters
 * `in.dir`: input dir, where all cv's in XML are.
 * `out.dir`: output dir, where all cv's in HTML are created.
+* `style.dir`: to override default style dir.
