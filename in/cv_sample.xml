@@ -18,7 +18,14 @@
     <projects>
         <project id="1" name="cv-formatter">
             <customer>CV Corp Inc.</customer>
-            <project_description>A fake CV factory</project_description>
+            <project_description>A fake CV factory.<br/>
+                This is the second line.<br/>
+                And the third line.
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                </ul>
+            </project_description>
             <function>Paper jam specialist</function>
             <datefrom>09/2016</datefrom>
             <dateto>11/2016</dateto>

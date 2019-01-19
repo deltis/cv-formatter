@@ -27,7 +27,10 @@
 <!ELEMENT date_of_birth (#PCDATA)>
 <!ELEMENT intermediary (#PCDATA)>
 <!ELEMENT customer (#PCDATA)>
-<!ELEMENT project_description (#PCDATA)>
+<!ELEMENT ul (li*)>
+<!ELEMENT li (#PCDATA)>
+<!ELEMENT br EMPTY>
+<!ELEMENT project_description (#PCDATA|ul|br)*>
 <!ELEMENT function (#PCDATA)>
 <!ELEMENT technology (#PCDATA)>
 <!ELEMENT activity (#PCDATA)>
