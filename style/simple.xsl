@@ -17,7 +17,7 @@
 					<xsl:value-of select="@last_update"/>
 					<xsl:text>)</xsl:text>
 				</title>
-				<STYLE>
+				<STYLE type="text/css">
 					body {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: x-small}
 					.customer {  font-weight: bold}
 					.function {  font-weight: bold}
