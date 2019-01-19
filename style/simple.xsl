@@ -169,7 +169,7 @@
 										<xsl:value-of select="@name"/>
 									</span>
 									<xsl:text> project: </xsl:text>									
-									<xsl:apply-templates/>
+									<xsl:apply-templates select="project_description"/>
 								</li>
 								<xsl:for-each select="activity">
 									<li>
