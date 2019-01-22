@@ -2,21 +2,19 @@
 Converts one or more CV formatted in XML to HTML.
 
 ### Prerequisite
-You need *ant* and *java* installed and configured.
+You need *maven* and *java* installed and configured.
 
 ### Quick start
 
 * Clone the project.
-* Issue the command `ant` OR
-* Issue the command `mvn process-resources`.
+* Issue the command `mvn clean xml:transform`
 
-This will generate cv_sample.html into `$HOME/cv_out`
+This will generate cv_sample.html into `target`
 
 ### Style
 Additional styles can be added to `style` dir. Default style is `simple`. To use a different style (for instance "my_style"):
 * Put `my_style.xsd` in style dir.
-* Run `ant -Dstyle=my_style` OR
-* Run `mvn process-resources -Dstyle=my_style`.
+* Run `mvn clean xml:transform -Dstyle=my_style`.
 
 ### Other parameters
 * `in.dir`: input dir, where all cv's in XML are.

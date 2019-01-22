@@ -13,7 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <style>simple</style>
         <in.dir>in</in.dir>
-        <out.dir>${user.home}/cv_out</out.dir>
+        <out.dir>target</out.dir>
         <style.url>file://${project.basedir}/style</style.url>
     </properties>
 
