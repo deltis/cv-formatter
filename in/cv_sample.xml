@@ -1,4 +1,4 @@
-<!DOCTYPE cv SYSTEM "https://raw.github.com/deltis/cv-formatter/master/cv.dtd">
+<!DOCTYPE cv SYSTEM "../cv.dtd">
 <cv last_update="16/01/2017">
     <headlines>
         <headline>Senior CV Formatter</headline>
