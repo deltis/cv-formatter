@@ -31,7 +31,7 @@
 					.label_technologies {  font-weight: normal; }
 					.technologies {  font-weight: normal}
 					.activity {  margin-bottom: 0px}
-					hr {  height: 1px; margin-top: 0px; margin-bottom: 0px}
+					hr { display: block; height: 1px; background: transparent; width: 100%; border: none; border-top: solid 1px #aaa; }
 					.avoid-page-break {page-break-inside: avoid;}
 				</STYLE>				
 			</head>
