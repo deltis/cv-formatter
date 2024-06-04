@@ -33,7 +33,7 @@
 					.activity {  margin-bottom: 0px}
 					hr { display: block; height: 1px; background: transparent; width: 100%; border: none; border-top: solid 1px #aaa; }
 					.avoid-page-break {page-break-inside: avoid;}
-				</STYLE>				
+				</STYLE>
 			</head>
 			<body>
 				<xsl:apply-templates/>
@@ -58,16 +58,14 @@
 	<xsl:template match="personal_details">
 		<h2>Personal Details</h2>
 		<xsl:apply-templates select="email"/>
-		<!--  
+		<!--
 		<xsl:apply-templates select="address"/>
 		-->
 		<xsl:apply-templates select="date_of_birth"/>
-		<!-- 
+		<!--
 		<xsl:apply-templates select="phone"/>
 		-->
-		<!-- 
-		<xsl:apply-templates select="fax"/>
-		-->
+		<xsl:apply-templates select="socials"/>
 	</xsl:template>
 	<xsl:template match="name">
 		<div class="name">
@@ -112,10 +110,16 @@
 			<xsl:apply-templates/>
 		</div>
 	</xsl:template>
-	<xsl:template match="fax">
+	<xsl:template match="social">
 		<div>
-			<xsl:text>Fax: </xsl:text>
-			<xsl:apply-templates/>
+			<xsl:value-of select="@type" />
+			<span>: </span>
+			<a>
+				<xsl:attribute name="href">
+					<xsl:value-of select="@href" />
+				</xsl:attribute>
+				<xsl:value-of select="@href" />
+			</a>
 		</div>
 	</xsl:template>
 	<xsl:template match="projects">
@@ -149,7 +153,7 @@
 				</tr>
 				<tr>
 					<td>
-					<!-- 
+					<!--
 						<div class="label_function">Function : </div>
 						 -->
 					</td>
@@ -168,7 +172,7 @@
 									<span class="project_name">
 										<xsl:value-of select="@name"/>
 									</span>
-									<xsl:text> project: </xsl:text>									
+									<xsl:text> project: </xsl:text>
 									<xsl:apply-templates select="project_description"/>
 								</li>
 								<xsl:for-each select="activity">

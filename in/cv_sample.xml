@@ -14,6 +14,10 @@
         </address>
         <date_of_birth>August 16, 1962</date_of_birth>
         <phone>928-759-6385</phone>
+        <socials>
+            <social type="X" href="https://twitter.com/GTC"/>
+            <social type="LinkedIn" href="https://www.linkedin.com/in/gtc/"/>
+        </socials>
     </personal_details>
     <projects>
         <project id="1" name="cv-formatter">

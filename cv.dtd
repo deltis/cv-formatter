@@ -4,7 +4,7 @@
 	last_update CDATA #IMPLIED
 >
 <!ELEMENT headlines (headline+)>
-<!ELEMENT personal_details (name, email, address?, date_of_birth?, phone?, fax?)>
+<!ELEMENT personal_details (name, email, address?, date_of_birth?, phone?, socials?)>
 <!ELEMENT projects (project+)>
 <!ELEMENT education_and_training (training+)>
 <!ELEMENT skills (skill+)>
@@ -47,5 +47,10 @@
 <!ATTLIST language
 	level CDATA #REQUIRED
 >
-<!ELEMENT fax (#PCDATA)>
 <!ELEMENT phone (#PCDATA)>
+<!ELEMENT socials (social+)>
+<!ELEMENT social (#PCDATA)>
+<!ATTLIST social
+    type (X|LinkedIn|github|Other) #REQUIRED
+    href CDATA #REQUIRED
+>
